@@ -94,8 +94,8 @@ const CoinsTable = () => {
   const handleSearch = () => {
     return coins.filter(
       (coin) =>
-        coin.name.toLowerCase().includes(search) ||
-        coin.symbol.toLowerCase().includes(search)
+        coin.name.toLowerCase().includes(search.toLowerCase().trim()) ||
+        coin.symbol.toLowerCase().includes(search.toLowerCase().trim())
     );
   };
 
@@ -108,7 +108,7 @@ const CoinsTable = () => {
         <TextField
           label="Search For a Crypto Currency"
           variant="outlined"
-          onChange={(e) => setSearch(e.target.value) & setPage(1)}
+          onChange={(e) => setSearch(e.target.value) && setPage(1)}
         />
         <TableContainer>
           {loading ? (
