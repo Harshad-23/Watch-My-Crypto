@@ -30,4 +30,4 @@ To Visit App:
 
 ### Made with ❤️ by Harshad Gujar 😉
 
-[MIT](https://github.com/Harshad-23/Watch-My-Crypto/blob/main/LICENSE) © [Harshad Gujar ](https://github.com/harshad-23)
+[MIT](https://github.com/Harshad-23/Watch-My-Crypto/blob/master/LICENSE) © [Harshad Gujar ](https://github.com/harshad-23)
