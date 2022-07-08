@@ -2,6 +2,10 @@
 
 Get all Info Regarding your favorite Crypto Currency
 
+### What's New? :new:
+Firebase Authentication</br>
+Lazy loading and Code splitting
+
 ## Demo
 
 here's a live working Demo<br>
