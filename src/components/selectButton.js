@@ -1,19 +1,19 @@
+import { Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 const SelectButton = ({ children, onClick, selected }) => {
-  const ButtonSpan = styled("span")(({ theme }) => ({
+  const ButtonSpan = styled(Button)(({ theme }) => ({
     border: `1px solid ${theme.palette.mainColor.main}`,
     borderRadius: 5,
     padding: "10px 40px",
-    margin: 5,
-    [theme.breakpoints.down("md")]: {
-      padding: 10,
-    },
+    margin: "0 3px",
+    textTransform: "capitalize",
+    wordBreak: "keep-all",
     [theme.breakpoints.down("sm")]: {
-      padding: 3,
-      paddingLeft: 5,
-      paddingRight: 5,
-      fontSize: "0.8rem",
+      padding: 0,
+      paddingLeft: 3,
+      paddingRight: 3,
+      wordSpacing: "30px",
     },
     cursor: "pointer",
     "&:hover": {

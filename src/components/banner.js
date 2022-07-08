@@ -3,7 +3,7 @@ import Carousal from "./carousal";
 import Title from "./title";
 
 const StyledBanner = styled("div")(() => ({
-  backgroundImage: "url(/banner8.1.webp)",
+  backgroundImage: "url(/images/banner8.1.webp)",
   backgroundSize: "cover",
   backgroundPosition: "center center",
   ".MuiContainer-root": {

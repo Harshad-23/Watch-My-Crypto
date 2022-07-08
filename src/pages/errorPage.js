@@ -2,7 +2,6 @@ import { Divider, styled, Typography } from "@mui/material";
 
 const StyledDiv = styled("div")(({ theme }) => ({
   display: "flex",
-
   alignItems: "center",
   justifyContent: "center",
   height: "80vh",
@@ -25,7 +24,7 @@ const StyledDiv = styled("div")(({ theme }) => ({
 const ErrorPage = ({ query }) => {
   return (
     <StyledDiv>
-      <img src="/broken.png" height={300} alt="not found"></img>
+      <img src="/images/broken.webp" height={300} alt="not found"></img>
       <Divider orientation="vertical" flexItem sx={{ marginRight: 3 }} />
       <div>
         <Typography variant="h1">404</Typography>

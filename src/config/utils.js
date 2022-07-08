@@ -3,6 +3,11 @@ export function numberWithCommas(x) {
   else return "-";
 }
 
+export function validateEmail(email) {
+  let regex = new RegExp("[a-z0-9]+@[a-z0-9]+.[a-z]{2,3}");
+  return regex.test(email);
+}
+
 export function fullDate(date) {
   // const longMonth = [
   //   "January",

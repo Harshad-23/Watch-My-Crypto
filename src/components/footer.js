@@ -9,6 +9,7 @@ const StyledFooter = styled("footer")(() => ({
   img: {
     margin: 5,
     height: 25,
+    width: 25,
     ":hover": {
       transition: "transform .2s ease",
       transform: "scale(1.3)",
@@ -30,7 +31,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferer noopener"
           >
-            <img src="/instagram.webp" alt="instagram" />
+            <img src="/images/instagram.webp" alt="instagram" />
           </Link>
 
           <Link
@@ -38,7 +39,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferer noopener"
           >
-            <img src="/github.webp" alt="github" />
+            <img src="/images/github.webp" alt="github" />
           </Link>
 
           <Link
@@ -46,7 +47,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferer noopener"
           >
-            <img src="/linkedin.webp" alt="linkedin" />
+            <img src="/images/linkedin.webp" alt="linkedin" />
           </Link>
         </div>
       </StyledFooter>

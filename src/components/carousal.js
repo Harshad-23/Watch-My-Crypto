@@ -9,11 +9,14 @@ import { TrendingCoins } from "../config/api";
 
 const CarouselItem = styled(Link)(() => ({
   display: "flex",
+  color: "white",
   fontWeight: "bold",
   flexDirection: "column",
   alignItems: "center",
   textTransform: "uppercase",
   img: {
+    height: 80,
+    width: 80,
     marginBottom: 10,
     marginTop: 20,
   },
@@ -42,7 +45,7 @@ const Carousal = () => {
     const profit = coin.price_change_percentage_24h >= 0;
     return (
       <CarouselItem to={`/coins/${coin.id}`}>
-        <img src={coin?.image} alt={coin.name} height="80" />
+        <img src={coin?.image} alt={coin.name} />
         <span>{coin?.symbol}</span>
         <span>
           {symbol} {numberWithCommas(coin?.current_price.toFixed(2))}

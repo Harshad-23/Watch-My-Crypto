@@ -10,29 +10,41 @@ import { styled } from "@mui/material/styles";
 import { useNavigate } from "react-router-dom";
 import { currencies } from "../config/data";
 import { CryptoState } from "../cryptoContext";
+import AuthModal from "./Authentication/authModal";
+import UserSideBar from "./Authentication/userSideBar";
 
 const StyledContainer = styled(Container)(({ theme }) => ({
   ".MuiTypography-h5": {
     flex: 1,
     color: theme.palette.mainColor.main,
     cursor: "pointer",
+    marginRight: 5,
     [theme.breakpoints.down("sm")]: {
-      fontSize: "1.2rem",
+      fontSize: "1rem",
+      //display: "none",
     },
   },
   img: {
     marginRight: 5,
+    marginLeft: -5,
     cursor: "pointer",
     height: 35,
+    width: 35,
   },
   b: {
     color: theme.palette.mainColor.main,
+  },
+  ".MuiAvatar-root": {
+    marginLeft: 25,
+    [theme.breakpoints.down("sm")]: {
+      marginLeft: 7,
+    },
   },
 }));
 
 function Header() {
   const navigate = useNavigate();
-  const { currency, setCurrency } = CryptoState();
+  const { currency, setCurrency, user } = CryptoState();
 
   return (
     <>
@@ -41,7 +53,7 @@ function Header() {
           <Toolbar>
             <img
               alt="logo"
-              src="/cryptologo2-purple.webp"
+              src="/images/cryptologo2-purple.webp"
               onClick={() => navigate("/")}
             ></img>
             <Typography variant="h5" onClick={() => navigate("/")}>
@@ -53,7 +65,7 @@ function Header() {
               labelId="demo-simple-select-label"
               id="demo-simple-select"
               sx={{
-                width: 100,
+                width: 90,
                 height: 40,
                 marginLeft: "auto",
               }}
@@ -66,6 +78,7 @@ function Header() {
                 </MenuItem>
               ))}
             </Select>
+            {user ? <UserSideBar /> : <AuthModal />}
           </Toolbar>
         </StyledContainer>
       </AppBar>

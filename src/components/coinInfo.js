@@ -28,6 +28,9 @@ const StyledContainer = styled("div")(({ theme }) => ({
     marginTop: 50,
     justifyContent: "space-between",
     width: "100%",
+    flexDirection: "row",
+    alignSelf: "flex-start",
+    marginLeft: -10,
   },
   ".MuiCircularProgress-root": {
     color: theme.palette.mainColor.main,
