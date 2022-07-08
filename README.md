@@ -1,4 +1,5 @@
 # Crypto Currency Tracker by using React JS, Material UI and Chart JS
+<img src="https://user-images.githubusercontent.com/34954756/172553577-11862262-fefb-4014-9548-59a1fbb7ad66.png" height="100" alt="logo"/>
 
 Get all Info Regarding your favorite Crypto Currency
 
